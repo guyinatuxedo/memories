@@ -281,3 +281,9 @@ USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 guy      tty7     :0               14:50    7:29m 14:06   0.44s /sbin/upstart --user
 $ exit
 ```
+also if you want the full list of what syscall codes correspond to which operations:
+```
+$	cat /usr/include/asm/unistd_64.h | grep execve
+#define __NR_execve 59
+#define __NR_execveat 322
+```

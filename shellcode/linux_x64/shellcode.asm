@@ -1,4 +1,4 @@
-; execve(), based off of shellcode from http://shell-storm.org/shellcode/files/shellcode-603.php
+; execve("/bin/sh", NULL, NULL), based off of shellcode from http://shell-storm.org/shellcode/files/shellcode-603.php
 [SECTION .text]
 global _start
 _start:
